@@ -23,6 +23,10 @@ const GlobalStyle = createGlobalStyle`
     --input-border-color: #DBDBDB;
     --button-primary-color: #005FFC;
     --button-secondary-color: #F5F5F5;
+  
+
+    --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+    'Helvetica', sans-serif;
   }
 
  
@@ -36,6 +40,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: var(--background-main-color);
     color: var(--text-primary-color);
+    font-family: var(--font-sans);
 
     font-size: 16px;
     scroll-behavior: smooth;
