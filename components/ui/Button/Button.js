@@ -1,5 +1,5 @@
 //Button.js
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const defaultProps = {
   htmlType: 'button',
@@ -37,11 +37,22 @@ const StyledButton = styled.button`
   :focus {
     opacity: 0.6;
   }
+
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      :hover {
+        cursor: not-allowed;
+        filter: grayscale(1);
+        -webkit-transform: translateZ(0);
+        -webkit-perspective: 1000;
+        -webkit-backface-visibility: hidden;
+      }
+    `}
 `
 
 const Button = ({ ...btnProps }) => {
-  const { children, disabled, onClick, htmlType, className, ...props } =
-    btnProps
+  const { children, disabled, htmlType, className, ...props } = btnProps
 
   return (
     <StyledButton

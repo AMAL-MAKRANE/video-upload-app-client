@@ -56,7 +56,7 @@ function Spinner() {
         strokeLinejoin="round"
         strokeWidth="2"
         viewBox="0 0 24 24"
-        color={Colors.text}
+        color="var(--text-primary-color)"
       >
         <path d="M12 2L12 6"></path>
         <path d="M12 18L12 22"></path>

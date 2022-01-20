@@ -73,25 +73,17 @@ const InputComponent = styled.input`
   }
 `
 export const defaultProps = {
-  disabled: false,
-  width: 'initial',
-  autoComplete: 'off',
   className: '',
-  placeholder: '',
-  initialValue: '',
-  type: 'text',
 }
 
-const Input = ({
-  className,
-  placeholder,
-  children,
-  disabled,
-  label,
-  readOnly,
-  type = 'text',
-  ...props
-}) => {
+const Input = ({ className, children, label, onChange, ...props }) => {
+  const handleOnChange = (e) => {
+    if (onChange) {
+      onChange(e.target.value)
+    }
+    return null
+  }
+
   return (
     <StyledInput>
       {label && <Label>{label}</Label>}
@@ -99,10 +91,11 @@ const Input = ({
       <InputContainer className={className}>
         <InputWrapper>
           <InputComponent
-            type="text"
-            placeholder={placeholder}
-            disabled={disabled}
-            readOnly={readOnly}
+            autoComplete="off"
+            autoCorrect="off"
+            autoCapitalize="off"
+            spellCheck="false"
+            onChange={handleOnChange}
             {...props}
           />
         </InputWrapper>
