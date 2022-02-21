@@ -38,7 +38,7 @@ export default function Home() {
             <p className={styles.description}>
               Watch your prefareable vidoes and upload them
             </p>
-            <Link href='./register'><div className={styles.btnStart}><i class="bi bi-steam"></i><span>Start For free</span></div></Link>
+            <Link href='./register'><div className={styles.btnStart}><i className="bi bi-steam"></i><span>Start For free</span></div></Link>
           </div>
           <Image src='/video_files.png' width={640} height={383} styles={{ flexBasis: '60%' }} alt="img style" />
         </div>
