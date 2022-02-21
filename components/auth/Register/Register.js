@@ -1,19 +1,19 @@
 import { useCallback, useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
-import LinkButton from './ui/LinkButton'
-import Spacer from './ui/Spacer'
-import Input from './ui/Input'
-import Loader from './ui/Loader'
-import { setAuthToken } from '../utils/auth'
+import LinkButton from '../../ui/LinkButton'
+import Spacer from '../../ui/Spacer'
+import Input from '../../ui/Input'
+import Loader from '../../ui/Loader'
+import { setAuthToken } from '../../../utils/auth'
 
-import * as styles from './auth/Login/styles'
+import * as styles from '../Login/styles'
 
 import { gql, useMutation } from '@apollo/client'
 import { validate } from 'email-validator'
 
 export const REGISTER_MUTATION = gql`
-  mutation register($input: RegisterInput!) {
-    register(input: $input) {
+  mutation register($registerInput: RegisterInput!) {
+    register(registerInput: $registerInput) {
       success
       message
       token
@@ -51,7 +51,7 @@ const Register = () => {
         data: { register: result },
       } = await register({
         variables: {
-          input: {
+          registerInput: {
             email: email,
             password: password,
             confirmPassword: confirmPassword,
@@ -137,7 +137,7 @@ const Register = () => {
           <Spacer y={24} />
 
           <styles.DontHaveAccountText p size="small">
-            {"you already have an account?"} <LinkButton>Login in</LinkButton>
+            {"you already have an account?"} <LinkButton>Register</LinkButton>
           </styles.DontHaveAccountText>
         </form>
       </styles.FormContainer>

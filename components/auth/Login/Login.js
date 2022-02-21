@@ -67,6 +67,13 @@ const Login = () => {
       setLoading(false)
       setDisabled(false)
     }
+    // handlePostLoginOk = () => {
+    //   const { router } = this.props;
+    //   if (router.query && router.query.from) {
+    //     router.push(router.query.from);
+    //   }
+    // }
+    router.push('/home')
   }
 
   const handleValidation = useCallback(() => {

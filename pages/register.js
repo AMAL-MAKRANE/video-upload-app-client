@@ -1,5 +1,5 @@
 import AuthLayout from '../components/common/Layout/AuthLayout'
-import Register from '../components/Register.js'
+import Register from '../components/auth/Register'
 
 export default function RegisterPage() {
   return <Register />
