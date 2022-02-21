@@ -1,12 +1,10 @@
 {
   "name": "nextjs-01",
   "private": true,
-  
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start"
   },
   "dependencies": {
     "@apollo/client": "^3.5.7",
