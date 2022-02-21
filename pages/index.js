@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import Link from 'next/link'
+import styles from '../styles/home.module.css'
 
 const Title = styled.h1`
   font-size: 50px;
@@ -10,5 +12,12 @@ const BiggerTitle = styled(Title)`
 `
 
 export default function Home() {
-  return <BiggerTitle>My page</BiggerTitle>
+
+  return (
+    <>
+      <BiggerTitle>fastcast</BiggerTitle>
+      <Link className={styles.link} href="/auth/signin">Signin</Link>
+      <Link href="/auth/signup">Signup</Link>
+    </>
+  ) 
 }
