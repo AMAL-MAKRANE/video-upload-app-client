@@ -52,8 +52,10 @@ we will be able to run the functionnaliy bellow
 [https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/](https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/)
 
 functionalities: 
-register: [https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/register](https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/register)
-login: [https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/login](https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/login)
-home page to add videos (first you have to be authentified = after login) [https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/home](https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/home)
+- register: [https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/register](https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/register)
+
+- login: [https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/login](https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/login)
+
+- home page to add videos (first you have to be authentified = after login) [https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/home](https://video-upload-app-client-1gayh0zku-amal-makrane.vercel.app/home)
 
 
