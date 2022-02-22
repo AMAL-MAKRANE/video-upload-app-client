@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/home.module.css'
 //import LoadingScreen from '../components/LoadingScreen';
 import React, { useEffect } from 'react';
 import Link from 'next/link';
