@@ -30,7 +30,7 @@ export default function Home() {
                     </div>
                     <div className={styles.section1Desc}>
                         <h1 className={styles.title}>
-                            you don't have any videos
+                            you dont have any videos
                         </h1>
                         <p className={styles.description}>
                             Watch your prefareable vidoes and upload them
